@@ -13,7 +13,7 @@ This project does not bundle third-party font files, proprietary datasets, API k
 **Presentation Pro Designer**  
 Copyright (c) 2026 Tariq Said
 
-This project is released under the MIT License. See [LICENSE.md](LICENSE).
+This project is released under the MIT License. See [LICENSE.md](LICENSE.md).
 
 ---
 
@@ -162,4 +162,4 @@ Do not copy source code, datasets, templates, images, fonts, or other assets fro
 
 ## No Warranty
 
-This project is provided "as is", without warranty of any kind. See `LICENSE` for the full MIT License terms.
+This project is provided "as is", without warranty of any kind. See `LICENSE.md` for the full MIT License terms.
