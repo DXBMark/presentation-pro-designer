@@ -325,7 +325,7 @@ You can copy any full prompt and:
 
 ## 📝 License
 
-These examples and prompts are part of the Presentation Pro Designer skill and are available under the MIT License. See [LICENSE](../LICENSE) for details.
+These examples and prompts are part of the Presentation Pro Designer skill and are available under the MIT License. See [LICENSE.md](../LICENSE.md) for details.
 
 ---
 

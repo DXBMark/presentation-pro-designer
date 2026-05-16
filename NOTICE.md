@@ -58,6 +58,7 @@ The following third-party or external projects informed parts of the workflow, s
 
 **Project / source:** Octagon financial skill examples and financial analyst workflow concepts  
 **Repository:** https://github.com/OctagonAI/skills
+
 **Use in this project:** Conceptual inspiration for investor-deck sections, financial-analysis routing, income statement, balance sheet, financial growth, analyst estimates, financial health scores, peer analysis, valuation, and risk sections.  
 **Bundled code:** No.  
 **Bundled financial data:** No.  
