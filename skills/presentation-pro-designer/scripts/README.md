@@ -6,6 +6,7 @@ Helper scripts for deterministic tasks:
 - `clean.py`: clean unused parts from unpacked PPTX folders after low-level edits.
 - `add_slide.py`: duplicate or add slides in an unpacked PPTX workflow.
 - `route_request.py`: classify prompt text into a presentation route.
+- `TEST_CASES.json`: baseline routing fixtures for manual regression checks.
 - `deck_manifest.py`: generate a reusable deck manifest from route output.
 - `validate_skill.py`: lightweight local skill-folder validation.
 

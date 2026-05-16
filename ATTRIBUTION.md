@@ -18,7 +18,7 @@ The following public projects informed parts of the workflow or terminology. The
 - AntV chart visualization skills: https://github.com/antvis/chart-visualization-skills
 - AntV visualisation ecosystem concepts: https://antv.vision/
 - Octagon Financial Skills: https://github.com/OctagonAI/skills
-- Teacher PPTX Designer: original predecessor workflow by Tariq Said
+- Teacher PPTX Designer: original predecessor workflow by Tariq Said, used as the education-focused foundation for this broader presentation skill.
 
 ## Attribution Policy
 

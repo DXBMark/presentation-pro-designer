@@ -168,19 +168,19 @@ presentation-pro-designer/
 │   └── source-governance.md
 ├── examples/
 │   ├── README.md                              # This file
-│   ├── prompt-library/                        # Comprehensive prompt templates
-│   ├── business-proposal-full.md
-│   ├── corporate-company-profile-full.md
-│   ├── data-report-deck-full.md
-│   ├── education-lesson-full.md
-│   ├── education-workshop-full.md
-│   ├── generic-presentation-full.md
-│   ├── improve-existing-pptx-full.md
-│   ├── investor-public-company-deck-full.md
-│   ├── investor-startup-deck-full.md
-│   ├── product-service-full.md
-│   ├── prompt-index.md
-│   └── verification-profile-claim-full.md
+│   └── prompt-library/                        # Comprehensive prompt templates
+│       ├── prompt-index.md
+│       ├── education-lesson-full.md
+│       ├── education-workshop-full.md
+│       ├── corporate-company-profile-full.md
+│       ├── business-proposal-full.md
+│       ├── product-service-full.md
+│       ├── verification-profile-claim-full.md
+│       ├── investor-startup-deck-full.md
+│       ├── investor-public-company-deck-full.md
+│       ├── data-report-deck-full.md
+│       ├── improve-existing-pptx-full.md
+│       └── generic-presentation-full.md
 ├── cli/
 │   ├── presentation_pro_cli.py
 │   ├── router.py
@@ -242,39 +242,21 @@ Suggested files:
 examples/
 ├── README.md                              # This file
 └── prompt-library/                        # Comprehensive prompt templates
-    ├── business-proposal-full.md
-    ├── corporate-company-profile-full.md
-    ├── data-report-deck-full.md
+  ├── prompt-index.md
     ├── education-lesson-full.md
     ├── education-workshop-full.md
-    ├── generic-presentation-full.md
-    ├── improve-existing-pptx-full.md
-    ├── investor-public-company-deck-full.md
-    ├── investor-startup-deck-full.md
+  ├── corporate-company-profile-full.md
+  ├── business-proposal-full.md
     ├── product-service-full.md
-    ├── prompt-index.md
-    └── verification-profile-claim-full.md
+  ├── verification-profile-claim-full.md
+  ├── investor-startup-deck-full.md
+  ├── investor-public-company-deck-full.md
+  ├── data-report-deck-full.md
+  ├── improve-existing-pptx-full.md
+  └── generic-presentation-full.md
 ```
 
 See [examples/README.md](examples/README.md) for detailed guidance on using each prompt.
-
-## Which File Should I Use?
-
-Choose the right file or folder based on your platform:
-
-| Target | File / Folder |
-|---|---|
-| **ChatGPT Skills** | `dist/presentation-pro-designer-skill.zip` (export with CLI) or create from `skills/presentation-pro-designer/` |
-| **Claude local Skills** | `skills/presentation-pro-designer/` copied into your Claude skills directory |
-| **Claude Code / IDE Agents** | Full repository as local context or as a project directory |
-| **Gemini Gems** | `skills/presentation-pro-designer/agents/gemini.md` as Gem instructions |
-| **VS Code Agents** | `skills/presentation-pro-designer/agents/vscode.md` or full repository |
-| **Cursor / Windsurf** | Full repository or `skills/presentation-pro-designer/agents/generic-agent.md` |
-| **Antigravity** | `skills/presentation-pro-designer/agents/antigravity.md` |
-| **Generic AI Agents** | `skills/presentation-pro-designer/SKILL.md` as instructions + reference files |
-| **CLI** | Repository root (run commands from here) |
-
----
 
 ## Quick Start
 
@@ -347,7 +329,15 @@ Run from the repository root:
 python -m cli.presentation_pro_cli route examples/corporate-profile.md
 python -m cli.presentation_pro_cli plan examples/investor-deck.md --type investor_deck
 python -m cli.presentation_pro_cli validate-repo .
-python -m cli.presentation_pro_cli export-skill --output dist/presentation-pro-designer-skill.zip
+python -m cli.presentation_pro_cli export-skill --target chatgpt
+```
+
+Default output: `dist/skill.zip`
+
+Advanced (custom output path):
+
+```bash
+python -m cli.presentation_pro_cli export-skill --output dist/skill.zip
 ```
 
 ### CLI Commands
@@ -412,8 +402,10 @@ presentation-pro-designer/SKILL.md
 If using the provided CLI:
 
 ```bash
-python -m cli.presentation_pro_cli export-skill --output dist/skill.zip
+python -m cli.presentation_pro_cli export-skill --target chatgpt
 ```
+
+Do not upload the Claude `.skill` package to ChatGPT unless ChatGPT explicitly supports that format. For ChatGPT, use `dist/skill.zip`.
 
 ## Which File Should I Use?
 
@@ -439,8 +431,6 @@ dist/claude/CLAUDE_GUIDE.md
 ## Platform Support
 
 See [`docs/platform-support.md`](docs/platform-support.md) for detailed platform instructions.
-
-For detailed platform setup, see `docs/platform-support.md`.
 
 For Claude-specific packaged distribution files, see `dist/claude/`.
 
@@ -497,7 +487,7 @@ python -m cli.presentation_pro_cli validate-repo .
 Export the standalone skill:
 
 ```bash
-python -m cli.presentation_pro_cli export-skill --output dist/presentation-pro-designer-skill.zip
+python -m cli.presentation_pro_cli export-skill --target chatgpt
 ```
 
 ## Roadmap
@@ -516,7 +506,7 @@ Planned improvements:
 
 ## License
 
-MIT License. See [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.md).
+MIT License. See [`LICENSE.md`](LICENSE.md) and [`NOTICE.md`](NOTICE.md).
 
 Copyright (c) 2026 Tariq Said.
 

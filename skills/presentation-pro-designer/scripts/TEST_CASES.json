@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Corporate company profile routes to corporate",
+    "input": "Create a corporate company profile presentation for stakeholders, covering company overview, services, capabilities, and digital presence.",
+    "expected_type": "corporate"
+  },
+  {
+    "name": "Explicit investor language routes to investor_deck",
+    "input": "Create an investor pitch deck for a Series A fundraising round including traction, valuation, and equity story.",
+    "expected_type": "investor_deck"
+  }
+]

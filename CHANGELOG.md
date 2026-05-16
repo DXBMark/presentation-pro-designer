@@ -3,20 +3,14 @@
 ## [1.0.0] - 2026-05-16
 
 ### Added
-- Added Claude-focused distribution package under `dist/claude/`.
-- Added `presentation-pro-designer.skill` for Claude environments that support custom Skill uploads.
-- Added Claude package documentation:
-	- `00_START_HERE.txt`
-	- `INSTALLATION.txt`
-	- `CLAUDE_GUIDE.md`
-	- `SKILL_SUMMARY.md`
-	- `README.md`
-- Added `THIRD_PARTY_NOTICES.md` for public attribution and license notes.
-- Added platform guidance distinguishing ChatGPT ZIP, Claude Skill package, Gemini instructions, IDE agent usage, and CLI usage.
-
-### Fixed
-- Clarified package usage by platform.
-- Avoided implying that financial data or external APIs are used by default.
+- First public release.
+- Multi-platform presentation design Skill.
+- ChatGPT Skill ZIP package.
+- Claude-focused `.skill` package.
+- CLI routing, planning, validation, package export, `which-file`, and `validate-dist`.
+- Prompt library examples.
+- Platform support documentation.
+- Attribution and notice files.
 
 ---
 
