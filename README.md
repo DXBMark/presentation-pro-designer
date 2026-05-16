@@ -103,13 +103,6 @@ Use this priority order:
 6. Approved project sources
 7. Existing deck style or extracted presentation profile
 8. Built-in presentation guidance
-
-The skill should not use external sources, stock images, websites, financial APIs, or public data unless the user explicitly approves.
-
-### Design Template Priority
-
-If a user provides a PowerPoint template, sample deck, brand guide, logo, or visual identity file, it becomes the highest design authority.
-
 The agent should preserve or follow:
 
 - Colours
@@ -264,6 +257,24 @@ examples/
 ```
 
 See [examples/README.md](examples/README.md) for detailed guidance on using each prompt.
+
+## Which File Should I Use?
+
+Choose the right file or folder based on your platform:
+
+| Target | File / Folder |
+|---|---|
+| **ChatGPT Skills** | `dist/presentation-pro-designer-skill.zip` (export with CLI) or create from `skills/presentation-pro-designer/` |
+| **Claude local Skills** | `skills/presentation-pro-designer/` copied into your Claude skills directory |
+| **Claude Code / IDE Agents** | Full repository as local context or as a project directory |
+| **Gemini Gems** | `skills/presentation-pro-designer/agents/gemini.md` as Gem instructions |
+| **VS Code Agents** | `skills/presentation-pro-designer/agents/vscode.md` or full repository |
+| **Cursor / Windsurf** | Full repository or `skills/presentation-pro-designer/agents/generic-agent.md` |
+| **Antigravity** | `skills/presentation-pro-designer/agents/antigravity.md` |
+| **Generic AI Agents** | `skills/presentation-pro-designer/SKILL.md` as instructions + reference files |
+| **CLI** | Repository root (run commands from here) |
+
+---
 
 ## Quick Start
 
