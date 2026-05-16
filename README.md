@@ -174,14 +174,20 @@ presentation-pro-designer/
 │   ├── platform-support.md
 │   └── source-governance.md
 ├── examples/
-│   ├── README.md
-│   ├── corporate-profile.md
-│   ├── business-proposal.md
-│   ├── product-service-presentation.md
-│   ├── verification-deck.md
-│   ├── investor-deck.md
+│   ├── README.md                              # This file
+│   ├── prompt-library/                        # Comprehensive prompt templates
+│   ├── business-proposal-full.md
+│   ├── corporate-company-profile-full.md
+│   ├── data-report-deck-full.md
 │   ├── education-lesson-full.md
-│   └── prompt-library/
+│   ├── education-workshop-full.md
+│   ├── generic-presentation-full.md
+│   ├── improve-existing-pptx-full.md
+│   ├── investor-public-company-deck-full.md
+│   ├── investor-startup-deck-full.md
+│   ├── product-service-full.md
+│   ├── prompt-index.md
+│   └── verification-profile-claim-full.md
 ├── cli/
 │   ├── presentation_pro_cli.py
 │   ├── router.py
