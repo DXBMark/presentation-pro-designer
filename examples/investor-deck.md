@@ -1,0 +1,1 @@
+Create an investor presentation for a SaaS company. Audience: seed investors. Include problem, solution, product, market, traction, business model, GTM, competition, team, financials, and ask. Mark missing financial data as DATA NEEDED.

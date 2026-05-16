@@ -1,0 +1,5 @@
+interface:
+  display_name: Presentation Pro Designer
+  short_description: Professional presentation design for education, corporate, proposals, products, verification, and investor decks.
+  icon: presentation
+  accent_color: '#2563EB'

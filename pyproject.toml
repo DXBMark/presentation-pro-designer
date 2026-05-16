@@ -1,0 +1,10 @@
+[project]
+name = "presentation-pro-designer"
+version = "1.0.0"
+description = "Multi-platform presentation design skill and CLI steering toolkit."
+authors = [{ name = "Tariq Said" }]
+license = "MIT"
+requires-python = ">=3.9"
+
+[project.scripts]
+presentation-pro = "cli.presentation_pro_cli:main"

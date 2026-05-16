@@ -1,0 +1,14 @@
+{
+  "name": "default-professional",
+  "colors": {
+    "primary": "#2563EB",
+    "secondary": "#1E40AF",
+    "accent": "#F97316",
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "text": "#0F172A",
+    "muted": "#64748B",
+    "border": "#CBD5E1"
+  },
+  "usage": "Clean professional default palette when no brand guide is provided."
+}

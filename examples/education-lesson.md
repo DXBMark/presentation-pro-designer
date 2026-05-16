@@ -1,0 +1,1 @@
+Create a professional lesson deck about introduction to algorithms for Year 8 Computing students. Use the attached syllabus as the main source and the attached PPTX template as the design authority. Include retrieval practice, objectives, worked example, guided task, independent task, misconception check, exit ticket, and speaker notes.
