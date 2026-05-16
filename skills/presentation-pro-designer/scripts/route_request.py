@@ -6,13 +6,83 @@ from pathlib import Path
 
 ROUTES = {
     "education": ["lesson", "students", "learning objective", "syllabus", "classroom", "retrieval", "exit ticket", "teacher", "cpd", "workshop", "curriculum"],
-    "corporate": ["company profile", "corporate", "stakeholder", "leadership", "internal update", "capabilities", "business overview"],
+    "corporate": [
+        "corporate",
+        "company profile",
+        "company overview",
+        "business overview",
+        "stakeholder",
+        "stakeholders",
+        "capabilities",
+        "services",
+        "service portfolio",
+        "about us",
+        "who we are",
+        "what we do",
+        "internal update",
+        "leadership update",
+        "company introduction",
+    ],
     "business_proposal": ["proposal", "scope", "deliverables", "client", "partnership", "implementation plan", "commercial"],
     "product_service": ["product", "service", "saas", "platform", "feature", "demo", "use case"],
     "verification_profile_claim": ["verification", "claim", "domain ownership", "profile", "official email", "tracxn", "ownership proof"],
-    "investor_deck": ["investor", "investors", "investment", "pitch deck", "fundraising", "valuation", "market size", "ticker", "eps", "revenue growth", "target price", "financials", "ask"],
+    "investor_deck": [
+        "investor",
+        "investment",
+        "pitch deck",
+        "fundraising",
+        "raise",
+        "series a",
+        "seed round",
+        "pre-seed",
+        "valuation",
+        "traction",
+        "vc",
+        "venture capital",
+        "equity",
+        "investment committee",
+        "public company",
+        "ticker",
+        "eps",
+        "ebitda",
+        "target price",
+        "analyst estimate",
+    ],
     "data_report": ["kpi", "metrics", "dashboard", "performance", "trend", "analysis", "chart", "data report"],
     "pptx_editing": ["edit", "redesign", "improve attached", "existing pptx", "template"],
+}
+
+EXPLICIT_INVESTOR_TERMS = {
+    "investor",
+    "investment",
+    "pitch deck",
+    "fundraising",
+    "raise",
+    "series a",
+    "seed round",
+    "pre-seed",
+    "valuation",
+    "traction",
+    "vc",
+    "venture capital",
+    "equity",
+    "investment committee",
+    "public company",
+    "ticker",
+    "eps",
+    "ebitda",
+    "target price",
+    "analyst estimate",
+}
+
+CORPORATE_PROFILE_TERMS = {
+    "company profile",
+    "corporate",
+    "company overview",
+    "business overview",
+    "services",
+    "capabilities",
+    "stakeholders",
 }
 
 REFERENCE_MAP = {
@@ -35,10 +105,24 @@ def classify(text: str) -> dict:
         hits = []
         for kw in keywords:
             if kw in hay:
-                score += 3 if route == "investor_deck" and kw in ["investor", "investors", "investment", "fundraising", "valuation", "financials", "ask"] else (2 if " " in kw else 1)
+                if route == "investor_deck" and kw in EXPLICIT_INVESTOR_TERMS:
+                    score += 2
+                elif route == "corporate" and kw in CORPORATE_PROFILE_TERMS:
+                    score += 2
+                else:
+                    score += 2 if " " in kw else 1
                 hits.append(kw)
         scores[route] = (score, hits)
-    route, (score, hits) = max(scores.items(), key=lambda kv: kv[1][0])
+
+    has_explicit_investor_signal = any(term in hay for term in EXPLICIT_INVESTOR_TERMS)
+    has_corporate_profile_signal = any(term in hay for term in CORPORATE_PROFILE_TERMS)
+
+    if has_corporate_profile_signal and not has_explicit_investor_signal:
+        route = "corporate"
+        score, hits = scores[route]
+    else:
+        route, (score, hits) = max(scores.items(), key=lambda kv: kv[1][0])
+
     if score == 0:
         route = "generic_presentation"
         hits = []

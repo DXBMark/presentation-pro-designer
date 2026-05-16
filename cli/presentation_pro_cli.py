@@ -37,11 +37,16 @@ def cmd_plan(args):
 
 def cmd_validate_repo(args):
     errors = []
-    required = ["README.md", "LICENSE", "NOTICE.md", "skill.json", "marketplace.json", "skills/presentation-pro-designer/SKILL.md"]
     root = Path(args.path)
+
+    required = ["README.md", "NOTICE.md", "skill.json", "marketplace.json", "skills/presentation-pro-designer/SKILL.md"]
     for rel in required:
         if not (root/rel).exists():
             errors.append(f"Missing {rel}")
+
+    if not ((root / "LICENSE.md").exists() or (root / "LICENSE").exists()):
+        errors.append("Missing LICENSE.md (or legacy LICENSE)")
+
     if errors:
         print("Repository validation failed:")
         for e in errors: print(f"- {e}")
