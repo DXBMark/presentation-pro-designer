@@ -1,5 +1,4 @@
-interface:
-  display_name: Presentation Pro Designer
-  short_description: Professional presentation design for education, corporate, proposals, products, verification, and investor decks.
-  icon: assets/icon.svg
-  accent_color: '#2563EB'
+name: presentation-pro-designer
+display_name: Presentation Pro Designer
+description: Professional presentation design for education, corporate, proposals, products, verification, and investor decks.
+icon: assets/icon.svg
