@@ -395,12 +395,37 @@ presentation-pro-designer/SKILL.md
 If using the provided CLI:
 
 ```bash
-python -m cli.presentation_pro_cli export-skill --output dist/presentation-pro-designer-skill.zip
+python -m cli.presentation_pro_cli export-skill --output dist/skill.zip
+```
+
+## Which File Should I Use?
+
+| Target | Use |
+|---|---|
+| ChatGPT Skills | `dist/skill.zip` |
+| ChatGPT manual packaging | Zip `skills/presentation-pro-designer/` with `presentation-pro-designer/` as the archive root |
+| Claude Skills | `dist/claude/presentation-pro-designer.skill` if your Claude environment supports custom skill uploads |
+| Claude local skills / Claude Code | Copy `skills/presentation-pro-designer/` into your Claude skills directory or use the full repo as context |
+| Gemini Gems | `skills/presentation-pro-designer/agents/gemini.md` |
+| VS Code / Cursor / Windsurf | Full repository |
+| Antigravity | `skills/presentation-pro-designer/agents/antigravity.md` |
+| CLI | Repository root |
+
+For Claude-specific installation and usage guidance, see:
+
+```text
+dist/claude/00_START_HERE.txt
+dist/claude/INSTALLATION.txt
+dist/claude/CLAUDE_GUIDE.md
 ```
 
 ## Platform Support
 
 See [`docs/platform-support.md`](docs/platform-support.md) for detailed platform instructions.
+
+For detailed platform setup, see `docs/platform-support.md`.
+
+For Claude-specific packaged distribution files, see `dist/claude/`.
 
 Supported usage patterns include:
 

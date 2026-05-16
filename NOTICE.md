@@ -2,18 +2,13 @@
 
 THE FOLLOWING SETS FORTH ATTRIBUTION NOTICES FOR THIRD-PARTY SOFTWARE, PUBLIC PROJECTS, DESIGN REFERENCES, AND CONCEPTUAL SKILL PATTERNS THAT MAY HAVE INFORMED PORTIONS OF THIS PROJECT.
 
+For a shorter attribution summary, see [ATTRIBUTION.md](ATTRIBUTION.md).
+
 This project does not bundle third-party font files, proprietary datasets, API keys, paid templates, or commercial slide assets.
 
 ---
 
-<<<<<<< HEAD
-- UI/UX Pro Max: design-system, palette, typography, accessibility, and asset-review concepts.
-- AntV chart visualization and infographic skill concepts: chart selection, infographic structure, and narrative visualization ideas.
-- Octagon financial skill examples: financial statement, growth, analyst estimate, health score, and equity research workflow concepts.
-- Teacher PPTX Designer: our specialized skill created for teacher-focused PowerPoint generation.
-=======
 ## Project Copyright
->>>>>>> c63768e (Update NOTICE.md and documentation for third-party attributions and platform support)
 
 **Presentation Pro Designer**  
 Copyright (c) 2026 Tariq Said
@@ -62,6 +57,7 @@ The following third-party or external projects informed parts of the workflow, s
 ### Octagon Financial Skills / Financial Analyst Master Concepts
 
 **Project / source:** Octagon financial skill examples and financial analyst workflow concepts  
+**Repository:** https://github.com/OctagonAI/skills
 **Use in this project:** Conceptual inspiration for investor-deck sections, financial-analysis routing, income statement, balance sheet, financial growth, analyst estimates, financial health scores, peer analysis, valuation, and risk sections.  
 **Bundled code:** No.  
 **Bundled financial data:** No.  

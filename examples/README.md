@@ -27,42 +27,42 @@ examples/
 Use these concise examples when you have a clear idea of what you need.
 
 ### 📚 Education
-- **[education-lesson-full.md](education-lesson-full.md)**
+- **[education-lesson-full.md](prompt-library/education-lesson-full.md)**
   - Classroom lesson presentations
   - Structured learning content
   - Teacher notes and activities
   - **Use when:** Creating student-facing lesson decks
 
 ### 🏢 Corporate
-- **[corporate-profile.md](corporate-profile.md)**
+- **[corporate-profile.md](prompt-library/corporate-company-profile-full.md)**
   - Company introductions and overviews
   - Stakeholder presentations
   - Business overview decks
   - **Use when:** Introducing a company or organization
 
 ### 💼 Business
-- **[business-proposal.md](business-proposal.md)**
+- **[business-proposal.md](prompt-library/business-proposal-full.md)**
   - Client proposals
   - Service proposals
   - Project pitches
   - **Use when:** Pitching a service or solution to a client
 
 ### 🛍️ Product/Service
-- **[product-service-presentation.md](product-service-presentation.md)**
+- **[product-service-presentation.md](prompt-library/product-service-full.md)**
   - Product introductions
   - Service explanations
   - Feature presentations
   - **Use when:** Showcasing what you offer to customers
 
 ### 💰 Investor
-- **[investor-deck.md](investor-deck.md)**
+- **[investor-deck.md](prompt-library/investor-startup-deck-full.md)**
   - Startup pitch decks
   - Fundraising presentations
   - Investor meetings
   - **Use when:** Pitching to investors for funding
 
 ### ✅ Verification
-- **[verification-deck.md](verification-deck.md)**
+- **[verification-deck.md](prompt-library/verification-profile-claim-full.md)**
   - Company verification packs
   - Profile claim support
   - Domain ownership proof
@@ -303,12 +303,12 @@ You can copy any full prompt and:
 
 | File | Type | Best For | Complexity |
 |------|------|----------|-----------|
-| [education-lesson-full.md](education-lesson-full.md) | Quick | Student lessons | Medium |
-| [corporate-profile.md](corporate-profile.md) | Quick | Company intro | Low |
-| [business-proposal.md](business-proposal.md) | Quick | Client pitch | Low |
-| [product-service-presentation.md](product-service-presentation.md) | Quick | Product demo | Low |
-| [investor-deck.md](investor-deck.md) | Quick | Startup pitch | Low |
-| [verification-deck.md](verification-deck.md) | Quick | Profile proof | Low |
+| [education-lesson-full.md](prompt-library/education-lesson-full.md) | Quick | Student lessons | Medium |
+| [corporate-profile.md](prompt-library/corporate-company-profile-full.md) | Quick | Company intro | Low |
+| [business-proposal.md](prompt-library/business-proposal-full.md) | Quick | Client pitch | Low |
+| [product-service-presentation.md](prompt-library/product-service-full.md) | Quick | Product demo | Low |
+| [investor-deck.md](prompt-library/investor-startup-deck-full.md) | Quick | Startup pitch | Low |
+| [verification-deck.md](prompt-library/verification-profile-claim-full.md) | Quick | Profile proof | Low |
 | [education-lesson-full.md](prompt-library/education-lesson-full.md) | Full | Detailed lessons | Medium |
 | [education-workshop-full.md](prompt-library/education-workshop-full.md) | Full | Staff training | Medium |
 | [corporate-company-profile-full.md](prompt-library/corporate-company-profile-full.md) | Full | Professional intro | Medium |

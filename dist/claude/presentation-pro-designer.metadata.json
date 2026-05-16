@@ -1,0 +1,95 @@
+{
+  "name": "presentation-pro-designer",
+  "displayName": "Presentation Pro Designer",
+  "version": "1.0.0",
+  "author": "Tariq Said",
+  "license": "MIT",
+  "type": "skill",
+  "format": "claude-skill-package",
+  "packageFile": "presentation-pro-designer.skill",
+  "description": "Professional presentation design skill for creating, editing, and quality-checking presentations across education, corporate, proposal, product/service, verification, investor, data-report, and PPTX editing contexts.",
+  "components": {
+    "main_instruction": "SKILL.md",
+    "claude_guide": "CLAUDE_GUIDE.md",
+    "reference_documents": 22,
+    "helper_scripts": 7,
+    "design_assets": 2,
+    "test_cases": 20
+  },
+  "capabilities": [
+    "Create new presentations",
+    "Edit existing PowerPoint/PPTX files",
+    "Apply templates and brand guides",
+    "Design charts and infographics",
+    "Handle multiple presentation types",
+    "Quality assurance and validation",
+    "Source governance and citation",
+    "Type-specific workflows",
+    "Financial data handling"
+  ],
+  "supportedPresentationTypes": [
+    "education",
+    "training_workshop",
+    "corporate",
+    "business_proposal",
+    "product_service",
+    "brand_company_intro",
+    "verification_profile_claim",
+    "investor_deck",
+    "data_report",
+    "pptx_editing",
+    "generic_presentation"
+  ],
+  "platforms": [
+    "Claude",
+    "ChatGPT",
+    "Gemini",
+    "VS Code",
+    "Cursor",
+    "Windsurf",
+    "Antigravity",
+    "Generic AI Agents"
+  ],
+  "triggers": [
+    "presentation",
+    "slide",
+    "slide deck",
+    "deck",
+    "PowerPoint",
+    "PPTX",
+    "ppt",
+    "pitch deck",
+    "proposal",
+    "create slides",
+    "edit presentation",
+    "design slides"
+  ],
+  "key_features": {
+    "type_specific_workflows": "Different structures for each presentation type",
+    "source_priority": "User uploads are highest priority design authority",
+    "no_fabrication": "Never invents financial metrics or market data",
+    "smart_questioning": "Max 5 clarifying questions, only when needed",
+    "brand_enforcement": "Extract and apply brand rules from templates",
+    "comprehensive_qa": "Content, design, source, accessibility, and technical checks"
+  },
+  "installation": {
+    "method": "Upload .skill file in Claude.ai Settings",
+    "requirements": "Claude.ai or Claude Code",
+    "setup_time": "< 1 minute"
+  },
+  "notes": [
+    "Claude-focused package generated from the Presentation Pro Designer skill.",
+    "Use dist/skill.zip for ChatGPT Skills.",
+    "Use dist/claude/presentation-pro-designer.skill for Claude environments that support custom Skill upload.",
+    "Do not use external sources or financial APIs unless explicitly approved by the user."
+  ],
+  "file_structure": {
+    "SKILL.md": "Main instructions (enhanced for Claude)",
+    "CLAUDE_GUIDE.md": "Claude.ai-specific integration guide",
+    "TEST_CASES.json": "20 test cases for skill evaluation",
+    "agents/claude.md": "Enhanced Claude workflow",
+    "references/": "22 reference documents for different workflows",
+    "scripts/": "7 helper scripts",
+    "assets/": "Design templates and palettes"
+  }
+}

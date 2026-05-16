@@ -1,0 +1,171 @@
+
+╔═══════════════════════════════════════════════════════════════╗
+║    PRESENTATION PRO DESIGNER - CLAUDE SKILL INSTALLATION      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📦 WHAT YOU HAVE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ presentation-pro-designer.skill  (Main skill package)
+✅ CLAUDE_GUIDE.md                  (Integration guide)
+✅ TEST_CASES.json                  (Evaluation test cases)
+✅ This installation file
+
+
+🚀 INSTALLATION IN CLAUDE.AI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open Claude.ai in your browser
+
+2. Go to: Settings → Features (or Custom Skills)
+
+3. Look for "Upload Skill" or "Install Skill" button
+
+4. Select: presentation-pro-designer.skill
+
+5. Claude will extract and install automatically
+
+6. Verify by starting a chat mentioning "presentation" or "slides"
+
+
+✨ KEY FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 Type-Specific Workflows
+   → Education, Corporate, Proposals, Investor, Product, Data Reports
+
+📊 Comprehensive Routing
+   → Classifies presentation type automatically
+   → Loads only relevant reference documents
+   → Smart clarifying questions (max 5)
+
+🎨 Design & Branding
+   → Applies your templates and brand rules
+   → Enforces design consistency
+   → Chart and infographic guidance
+
+✅ Quality Assurance
+   → Content accuracy checks
+   → Design consistency verification
+   → Accessibility review
+   → Source governance
+
+📚 Source Priority
+   → User uploads highest authority
+   → Never fabricates financial data
+   → Cites all sources used
+
+
+💡 HOW TO USE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Just mention presentations or slides in Claude:
+
+✅ "Create a Series A pitch deck for our SaaS startup"
+✅ "Edit my PowerPoint and apply our new brand guidelines"
+✅ "Design a training presentation on our new product"
+✅ "Make an investor deck using this financial data"
+✅ "Create educational slides on machine learning"
+
+The skill will automatically:
+• Classify your presentation type
+• Ask up to 5 clarifying questions (if needed)
+• Load relevant workflows
+• Apply your templates/brands
+• Create or edit your presentation
+• Run quality assurance checks
+• Deliver with source summary
+
+
+📋 SUPPORTED PRESENTATION TYPES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Education & Training (lessons, courses, workshops, CPD)
+• Corporate (company profile, stakeholder, internal)
+• Business Proposals (client proposals, service pitches)
+• Product/Service (product demo, SaaS deck, service overview)
+• Verification/Profile (domain proof, claim verification)
+• Investor Presentations (startup pitch, investment deck)
+• Data Reports (KPI decks, analytics, performance)
+• Existing PPTX Editing (redesign, polish, restructure)
+
+
+📚 WHAT TO UPLOAD FOR BEST RESULTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Design & Branding:
+✓ Design template PPTX (if you have one)
+✓ Brand guidelines PDF
+✓ Logo files
+✓ Color palette specifications
+
+Content & Data:
+✓ Company profile or background docs
+✓ Financial statements
+✓ Research papers or source documents
+✓ Data files or spreadsheets
+✓ Competitor analysis
+
+Existing Work:
+✓ Current PowerPoint (for editing)
+✓ Previous deck versions (as reference)
+✓ Slide libraries (for reuse)
+
+
+⚙️ WHAT'S INCLUDED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Inside the .skill file:
+
+SKILL.md                          Main instructions (Claude-optimized)
+CLAUDE_GUIDE.md                   Claude.ai integration guide
+TEST_CASES.json                   20 test cases for evaluation
+
+agents/
+  ├── claude.md                   Enhanced Claude workflow
+  ├── openai.yaml                 ChatGPT Skills format
+  ├── gemini.md                   Google Gemini format
+  └── [other platform formats]
+
+references/                        22 detailed workflow documents
+  ├── content_type_router.md       (Classification guide)
+  ├── education_decks.md           (Education workflows)
+  ├── corporate_decks.md           (Corporate workflows)
+  ├── proposal_decks.md            (Proposal workflows)
+  ├── investor_decks.md            (Investor workflows)
+  ├── brand_theme_protocol.md      (Brand enforcement)
+  ├── chart_visual_guidelines.md   (Chart selection)
+  ├── qa_checklists.md             (Quality assurance)
+  └── [and 14 more reference docs]
+
+scripts/                           Helper scripts
+  ├── route_request.py
+  ├── add_slide.py
+  ├── deck_manifest.py
+  └── [more utility scripts]
+
+assets/                            Design assets
+  └── sample-palettes/
+
+
+📞 SUPPORT & DOCUMENTATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Read CLAUDE_GUIDE.md for:
+• Detailed installation steps
+• Usage examples and workflows
+• FAQ and troubleshooting
+• Pro tips for best results
+• Complete feature overview
+
+
+🎉 YOU'RE READY!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+After installation, start using by mentioning presentations or slides
+in Claude. The skill will automatically activate and guide you through
+creating professional presentations.
+
+Version: 1.0.0
+License: MIT
+Author: Tariq Said (Enhanced for Claude.ai)

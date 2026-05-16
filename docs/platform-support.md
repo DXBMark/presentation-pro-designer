@@ -12,8 +12,8 @@ This document explains which files to use for each platform.
 |---|---|---|
 | ChatGPT Skills | Upload the packaged skill ZIP | `dist/skill.zip` |
 | ChatGPT Skills, manual packaging | Zip the skill folder | `skills/presentation-pro-designer/` |
-| Claude Skills | Use the skill folder or platform upload flow | `skills/presentation-pro-designer/` |
-| Claude Code / local Claude skills | Copy the skill folder into Claude's local skills directory | `.claude/skills/presentation-pro-designer/` |
+| Claude Skills | Use the Claude-focused packaged skill | `dist/claude/presentation-pro-designer.skill` |
+| Claude Code / local Claude skills | Use the full repo as context or copy the skill folder locally | `skills/presentation-pro-designer/` |
 | Gemini Gems | Use the Gemini instruction pack | `skills/presentation-pro-designer/agents/gemini.md` |
 | VS Code / Cursor / Windsurf | Use the full repo as an agent workspace | repository root |
 | Antigravity | Use the Antigravity steering file | `skills/presentation-pro-designer/agents/antigravity.md` |
@@ -24,114 +24,79 @@ This document explains which files to use for each platform.
 
 ## OpenAI / ChatGPT Skills
 
-### Recommended option: upload the packaged ZIP
-
-Use:
+Use the ChatGPT-compatible package:
 
 ```text
 dist/skill.zip
 ```
 
-This file is the ready-to-upload ChatGPT Skill package.
+Upload this file in the ChatGPT Skills interface.
 
-The ZIP should contain this structure:
+If you need to rebuild it:
 
+```bash
+python -m cli.presentation_pro_cli export-skill --output dist/skill.zip
 ```
+
+The ZIP root should contain:
+
+```text
 presentation-pro-designer/
 ├── SKILL.md
-├── LICENSE.txt
 ├── agents/
 ├── references/
 ├── scripts/
 └── assets/
 ```
 
-#### Upload steps
-
-1. Open ChatGPT.
-2. Go to the Skills area in your ChatGPT workspace.
-3. Choose the option to create or upload a Skill.
-4. Upload `dist/skill.zip`.
-5. Confirm the Skill details.
-6. Test it with a prompt such as:
-
-```text
-@presentation-pro-designer
-
-Create a professional corporate PowerPoint presentation using the attached company profile as the main source.
-```
-
-### Manual packaging option
-
-If `dist/skill.zip` is not present, create it from the repo root:
-
-```bash
-python -m cli.presentation_pro_cli export-skill --output dist/skill.zip
-```
-
-Or manually zip this folder:
-
-```
-skills/presentation-pro-designer/
-```
-
-The resulting archive must contain:
-
-```
-presentation-pro-designer/SKILL.md
-```
-
-not:
-
-```
-skills/presentation-pro-designer/SKILL.md
-```
-
-If the ZIP has an extra parent folder, ChatGPT may not recognise it as a valid Skill.
+Do not upload the Claude `.skill` file to ChatGPT unless the platform explicitly supports that format.
 
 ---
 
 ## Claude Skills
 
-Claude Skill support depends on the Claude product or environment you are using.
+Claude support depends on the Claude product and plan you are using.
 
-Use the official Claude Skills upload or creation flow when available. If your Claude environment supports importing a Skill archive, upload a ZIP containing:
+This repository includes a Claude-focused package:
 
-```
-presentation-pro-designer/
-├── SKILL.md
-├── references/
-├── scripts/
-└── assets/
+```text
+dist/claude/presentation-pro-designer.skill
 ```
 
-If your environment supports local skills, copy the skill folder into a Claude-compatible local skills directory, for example:
+If your Claude environment supports custom Skill uploads:
 
+Open Claude.
+Go to the current Skills or Custom Skills area in your Claude settings.
+Choose the upload or install option.
+Upload:
+dist/claude/presentation-pro-designer.skill
+Start a new chat and ask for a presentation, slide deck, PowerPoint, pitch deck, or deck editing task.
+
+Claude-specific documentation is included here:
+
+```text
+dist/claude/00_START_HERE.txt
+dist/claude/INSTALLATION.txt
+dist/claude/CLAUDE_GUIDE.md
+dist/claude/SKILL_SUMMARY.md
 ```
-.claude/skills/presentation-pro-designer/
-├── SKILL.md
-├── references/
-├── scripts/
-└── assets/
+
+If your Claude environment does not support direct .skill upload, use the source skill folder instead:
+
+```text
+skills/presentation-pro-designer/
 ```
 
-### Claude Code / local repo usage
+For Claude Code or local-agent workflows, use the full repository as context and start from:
 
-For Claude Code or repo-based agents, use the full repository as context.
-
-Recommended startup instruction:
-
-> Use this repository as an agent skill. Start with `skills/presentation-pro-designer/SKILL.md`, classify the presentation type using `references/content_type_router.md`, then follow the relevant workflow and QA files.
-
-Claude-specific guidance is available in:
-
-```
+```text
+skills/presentation-pro-designer/SKILL.md
 skills/presentation-pro-designer/agents/claude.md
 ```
 
-### Important Claude note
+Recommended Claude Code instruction:
 
-If your Claude environment does not support direct Skill ZIP upload, do not upload `dist/skill.zip` blindly. Instead, use the skill folder or copy the instructions into the Claude Skill creation interface.
+Use this repository as a presentation design skill. Start with skills/presentation-pro-designer/SKILL.md, classify the presentation type, then load the relevant reference files and QA checklist. Do not use external sources unless the user explicitly approves.
 
 ---
 
