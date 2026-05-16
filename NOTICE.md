@@ -9,7 +9,7 @@ This repository includes original instructions and implementation files. Some wo
 - UI/UX Pro Max: design-system, palette, typography, accessibility, and asset-review concepts.
 - AntV chart visualization and infographic skill concepts: chart selection, infographic structure, and narrative visualization ideas.
 - Octagon financial skill examples: financial statement, growth, analyst estimate, health score, and equity research workflow concepts.
-- Teacher PPTX Designer: the earlier private/specialized skill created for teacher-focused PowerPoint generation.
+- Teacher PPTX Designer: our specialized skill created for teacher-focused PowerPoint generation.
 
 Where concepts are adapted, they are rewritten for this repository's presentation workflow. No API keys, proprietary data, unlicensed font files, or private brand assets are included.
 
