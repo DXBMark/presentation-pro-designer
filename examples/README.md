@@ -7,12 +7,6 @@ Welcome to the Presentation Pro Designer examples library. This directory contai
 ```
 examples/
 ├── README.md                              # This file
-├── business-proposal.md                   # Quick business proposal example
-├── corporate-profile.md                   # Quick corporate profile example
-├── education-lesson-full.md              # Full education lesson example
-├── investor-deck.md                       # Quick investor deck example
-├── product-service-presentation.md        # Quick product/service example
-├── verification-deck.md                   # Quick verification deck example
 └── prompt-library/                        # Comprehensive prompt templates
     ├── business-proposal-full.md
     ├── corporate-company-profile-full.md
