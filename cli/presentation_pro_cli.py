@@ -2,7 +2,9 @@
 from __future__ import annotations
 import argparse, json, sys, zipfile
 from pathlib import Path
+
 from .router import route_file, make_manifest
+from .cli_dist_checks import validate_dist, which_file
 
 REFERENCE_MAP = {
     "education": ["education_decks.md", "brand_theme_protocol.md", "qa_checklists.md"],
@@ -49,13 +51,26 @@ def cmd_validate_repo(args):
 
 
 def cmd_export_skill(args):
-    out = Path(args.output)
-    out.parent.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
-        for p in SKILL.rglob("*"):
-            if p.is_file():
-                z.write(p, p.relative_to(SKILL.parent))
-    print(f"Wrote {out}")
+    target = getattr(args, "target", None) or getattr(args, "format", "openai")
+    if target == "chatgpt" or target == "openai":
+        out = Path(args.output if hasattr(args, "output") else "dist/skill.zip")
+        out.parent.mkdir(parents=True, exist_ok=True)
+        with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+            for p in SKILL.rglob("*"):
+                if p.is_file():
+                    z.write(p, p.relative_to(SKILL.parent))
+        print(f"Wrote {out}")
+    elif target == "claude":
+        skill_file = Path("dist/claude/presentation-pro-designer.skill")
+        if skill_file.exists():
+            print("Claude package already exists:")
+            print("dist/claude/presentation-pro-designer.skill")
+        else:
+            print("Claude package not found. Please add or build it manually.")
+    else:
+        print(f"Unknown target: {target}")
+        return 1
+    return 0
 
 
 def main(argv=None):
@@ -72,9 +87,13 @@ def main(argv=None):
     p.add_argument("path", nargs="?", default=".")
     p.set_defaults(func=cmd_validate_repo)
     p = sub.add_parser("export-skill", help="Export skill folder as a zip")
-    p.add_argument("--output", default="dist/presentation-pro-designer-skill.zip")
-    p.add_argument("--format", default="openai")
+    p.add_argument("--output", default="dist/skill.zip")
+    p.add_argument("--target", default="chatgpt", choices=["chatgpt","claude"])
     p.set_defaults(func=cmd_export_skill)
+    p = sub.add_parser("which-file", help="Show which package to use for each platform")
+    p.set_defaults(func=lambda args: which_file())
+    p = sub.add_parser("validate-dist", help="Validate distribution packages")
+    p.set_defaults(func=lambda args: validate_dist())
     args = parser.parse_args(argv)
     result = args.func(args)
     return 0 if result is None else result

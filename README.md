@@ -338,6 +338,7 @@ Output:
 - Include a short summary of sources used, assumptions made, design decisions, and QA checks completed.
 ```
 
+
 ## CLI Usage
 
 Run from the repository root:
@@ -357,6 +358,8 @@ python -m cli.presentation_pro_cli export-skill --output dist/presentation-pro-d
 | `plan` | Create a structured deck manifest |
 | `validate-repo` | Check required repo and skill files |
 | `export-skill` | Export the skill folder as a ZIP |
+| `which-file` | Show which package to use for each platform |
+| `validate-dist` | Validate distribution packages |
 
 Example:
 
@@ -377,6 +380,20 @@ Example output:
   ]
 }
 ```
+
+## Platform Package Helpers
+
+```bash
+python -m cli.presentation_pro_cli which-file
+python -m cli.presentation_pro_cli validate-dist
+python -m cli.presentation_pro_cli export-skill --target chatgpt
+```
+
+Use:
+
+- `dist/skill.zip` for ChatGPT Skills.
+- `dist/claude/presentation-pro-designer.skill` for Claude environments that support custom Skill uploads.
+- `skills/presentation-pro-designer/` for local skill workflows.
 
 ## Install as a Skill
 
