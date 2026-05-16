@@ -1,5 +1,10 @@
+
 # Distribution Builds
 
+<p align="center">
+	<img src="../assets/icon.svg" alt="Presentation Pro Designer icon" width="96">
+</p>
+Both packaged skill distributions include the official skill icon from v1.0.2 onward.
 This folder contains packaged builds for different platforms.
 
 ## Available packages

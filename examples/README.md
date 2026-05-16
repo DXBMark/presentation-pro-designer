@@ -1,4 +1,9 @@
+
 # Examples Directory
+
+<p align="center">
+  <img src="../assets/icon.svg" alt="Presentation Pro Designer icon" width="96">
+</p>
 
 Welcome to the Presentation Pro Designer examples library. This directory contains ready-to-use prompt templates and example presentations to help you get started quickly.
 

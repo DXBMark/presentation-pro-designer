@@ -2,9 +2,10 @@
   "name": "presentation-pro-designer",
   "displayName": "Presentation Pro Designer",
   "description": "Multi-platform presentation design skill with routing, source governance, deck strategy, chart guidance, financial support, and CLI steering.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Tariq Said",
   "license": "MIT",
   "skills": "./skills/",
-  "cli": "python -m cli.presentation_pro_cli"
+  "cli": "python -m cli.presentation_pro_cli",
+  "icon": "assets/icon.svg"
 }

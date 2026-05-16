@@ -1,10 +1,11 @@
 {
   "name": "presentation-pro-designer",
   "displayName": "Presentation Pro Designer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Tariq Said",
   "license": "MIT",
   "type": "skill",
+  "icon": "assets/icon.svg",
   "format": "claude-skill-package",
   "packageFile": "presentation-pro-designer.skill",
   "description": "Professional presentation design skill for creating, editing, and quality-checking presentations across education, corporate, proposal, product/service, verification, investor, data-report, and PPTX editing contexts.",

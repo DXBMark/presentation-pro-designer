@@ -1,4 +1,9 @@
+
 # Presentation Pro Designer
+
+<p align="center">
+  <img src="assets/icon.svg" alt="Presentation Pro Designer icon" width="128">
+</p>
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
@@ -21,6 +26,7 @@ The core idea is simple:
 Classify the presentation type first.
 Then choose the right deck structure, source rules, design system, visuals, charts, and QA process.
 ```
+
 
 ## What This Repository Provides
 

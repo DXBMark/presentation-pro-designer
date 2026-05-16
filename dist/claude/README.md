@@ -1,6 +1,24 @@
 
+
 # Presentation Pro Designer - Claude-Focused Skill Package
 
+<p align="center">
+	<img src="../../assets/icon.svg" alt="Presentation Pro Designer icon" width="120">
+</p>
+## Skill Icon
+
+This Claude-focused package includes the official Presentation Pro Designer icon inside the `.skill` package:
+
+```text
+assets/icon.svg
+
+```
+
+For the repository preview, the icon is stored at:
+
+assets/icon.svg
+
+---
 > Claude-focused distribution package for Presentation Pro Designer.
 
 > This folder is a Claude-focused distribution package.  

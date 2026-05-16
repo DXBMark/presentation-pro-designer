@@ -1,4 +1,17 @@
+
 # Changelog
+
+## [1.0.2] - 2026-05-16
+
+### Added
+- Added the official Presentation Pro Designer skill icon.
+- Added root repository icon at `assets/icon.svg`.
+- Added skill package icon asset at `skills/presentation-pro-designer/assets/icon.svg`.
+- Added icon references to `skill.json`, `marketplace.json`, OpenAI agent metadata, and Claude package metadata.
+- Updated README files to display or document the icon.
+
+### Changed
+- Rebuilt ChatGPT and Claude packaged skill assets to include the new icon files.
 
 ## [1.0.0] - 2026-05-16
 

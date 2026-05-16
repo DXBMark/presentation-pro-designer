@@ -2,7 +2,7 @@
   "name": "presentation-pro-designer",
   "displayName": "Presentation Pro Designer",
   "description": "Professional presentation design skill for education, corporate, business proposals, product/service decks, verification decks, data reports, and investor presentations.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Tariq Said",
   "license": "MIT",
   "skills": "./skills/",
@@ -34,5 +34,10 @@
     "antigravity",
     "generic-agent"
   ],
-  "cli": "python -m cli.presentation_pro_cli"
+  "cli": "python -m cli.presentation_pro_cli",
+  "interface": {
+    "displayName": "Presentation Pro Designer",
+    "shortDescription": "Multi-platform presentation design skill and CLI toolkit.",
+    "composerIcon": "./assets/icon.svg"
+  }
 }
