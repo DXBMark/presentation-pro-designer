@@ -1,1 +1,0 @@
-Create a professional corporate presentation about DXBMark. Use the attached company verification pack as the main source. Audience: profile reviewers and potential partners. Include company overview, identity, services, digital estate, official emails, verification methods, and closing summary. Do not use external sources.

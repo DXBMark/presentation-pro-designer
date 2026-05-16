@@ -1,1 +1,0 @@
-Create a client proposal presentation for a web platform implementation. Audience: client leadership team. Include problem, proposed solution, scope, deliverables, timeline, assumptions, risks, and next steps. Do not invent pricing unless supplied.

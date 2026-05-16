@@ -1,1 +1,0 @@
-Create a verification/profile claim deck using the attached proof pack. Audience: profile verification team. Include entity overview, ownership/authorized representative details if supplied, domain estate, official emails, public channels, verification methods, limitations, and closing statement.
