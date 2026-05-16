@@ -246,19 +246,21 @@ Recommended prompt library location: **`examples/prompt-library/`**
 Suggested files:
 
 ```
-examples/prompt-library/
-├── prompt-index.md
-├── education-lesson-full.md
-├── education-workshop-full.md
-├── corporate-company-profile-full.md
-├── business-proposal-full.md
-├── product-service-full.md
-├── verification-profile-claim-full.md
-├── investor-startup-deck-full.md
-├── investor-public-company-deck-full.md
-├── data-report-deck-full.md
-├── improve-existing-pptx-full.md
-└── generic-presentation-full.md
+examples/
+├── README.md                              # This file
+└── prompt-library/                        # Comprehensive prompt templates
+    ├── business-proposal-full.md
+    ├── corporate-company-profile-full.md
+    ├── data-report-deck-full.md
+    ├── education-lesson-full.md
+    ├── education-workshop-full.md
+    ├── generic-presentation-full.md
+    ├── improve-existing-pptx-full.md
+    ├── investor-public-company-deck-full.md
+    ├── investor-startup-deck-full.md
+    ├── product-service-full.md
+    ├── prompt-index.md
+    └── verification-profile-claim-full.md
 ```
 
 See [examples/README.md](examples/README.md) for detailed guidance on using each prompt.
